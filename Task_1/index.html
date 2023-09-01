@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="main">
+        <div class="top-section">
+            <input type="text" placeholder="0" id="screen" disabled>
+        </div>
+        <div class="bottom-section">
+            <button id="btn" class="special">(</button>
+            <button id="btn" class="special" >)</button>
+            <button class="special" onclick="ans()">=</button>
+            <button class="special" onclick="del()">del</button>
+            <button class="special" onclick="allclear()">clear</button>
+            <button id="btn">7</button>
+            <button id="btn">8</button>
+            <button id="btn">9</button>
+            <button id="btn" class="special" >%</button>
+            <button class="special" onclick="sq()">√</button>
+            <button id="btn">4</button>
+            <button id="btn">5</button>
+            <button id="btn">6</button>
+            <button id="btn" class="special">x</button>
+            <button id="btn" class="special">÷</button>
+            <button id="btn">1</button>
+            <button id="btn">2</button>
+            <button id="btn">3</button>
+            <button id="btn" class="special">+</button>
+            <button id="btn" class="special">-</button>
+            <button id="btn" class="special">.</button>
+            <button id="btn">0</button>
+            <button id="btn" class="special">+-</button>
+            <button id="btn" class="large">00</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

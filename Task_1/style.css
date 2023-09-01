@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(182 212 182);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    width: 30.75rem;
+    height: 28rem;
+    background-color: rgb(2, 30, 2);;
+    padding: 15px;
+    border-radius: 8px;
+}
+#screen{
+    width: 100%;
+    height: 20%;
+    text-align: right;
+    font-size: 50px;
+    padding: 8px 8px;
+    border-radius: 5px;
+    background: rgb(105, 171, 105);
+    color: rgb(4, 86, 4);
+}
+.bottom-section{
+    height: 80%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: .5fr .5fr .5fr .5fr .5fr;
+    padding: 4px;
+    margin: 2px;
+    grid-gap: 9px;
+    margin-top: 8px; 
+}
+button{
+    border-radius: 6px;
+    font-size: 22px;
+    cursor: pointer;
+    background-color: rgb(117, 210, 117);
+}
+button:hover{
+    box-shadow: inset 5px 5px 8px rgba(16, 16, 16,.1),
+    inset -5px -5px 8px rgb(117, 210, 117);
+    background: rgb(117, 210, 117);
+}
+.large{
+    grid-column-start: 4;
+    grid-column-end: 6;
+    background-color: rgb(2, 101, 2);
+}
+.special{
+    background-color: rgb(49, 178, 49);
+}
+
+
+@media screen and (max-width : 550px) {
+    .main{
+        width: 24.75rem;
+    }
+    
+}
+@media screen and (max-width : 450px) {
+    .main{
+        width: 20.75rem;
+    }
+    
+}
