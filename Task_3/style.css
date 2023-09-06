@@ -1,0 +1,139 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #eee;
+}
+.main {
+  max-width: 800px;
+  background-color: #2c3e50;
+  position: relative;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 5px;
+}
+.addtask {
+  width: 100%;
+  display: flex;
+  padding: 10px 0;
+}
+.addtask > input[type="text"] {
+  width: 90%;
+  border: none;
+  color: white;
+  border-bottom: 2px solid #666;
+  background: none;
+  padding: 10px;
+  font-size: 22px;
+  outline: none;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  background-color: #bdc3c7;
+  color: #fff;
+  padding: 1.15rem 2.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #95a5a6;
+}
+
+.pending,
+.completed {
+  padding: 20px;
+  margin: 5px 0;
+}
+h3 {
+  font-size: 28px;
+  text-align: center;
+  color: #fff;
+}
+ol {
+  list-style: none;
+  counter-reset: my-counter;
+}
+ol li {
+  width: 100%;
+  margin: 5px 0;
+  background-color: #f39c12;
+  padding: 18px;
+  font-size: 22px;
+  border-radius: 10px;
+  counter-increment: my-counter;
+}
+ol.completed li {
+  background-color: rgb(17, 203, 17);
+}
+ol li::before {
+  content: counter(my-counter);
+  background: #2c3e50;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: inline-block;
+  line-height: 2rem;
+  text-align: center;
+  color: #fff;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+li button {
+  float: right;
+  padding: 5px;
+  font-size: 28px;
+  line-height: 28px;
+  margin-right: 15px;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.filter-content {
+  margin: 2rem 0 2.5rem;
+  background-color: #34495e;
+  padding: 0.375rem;
+  border-radius: 0.75rem;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 0.5rem;
+}
+.filter-button {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 1rem;
+  color: white;
+  font-size: 0.813rem;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  background-color: transparent;
+  transition: 0.3s;
+}
+
+.filter-button:hover {
+  background-color: #191d2b;
+}
+
+.filters [data-content] {
+  display: none;
+}
+
+.filters__active[data-content] {
+  display: grid;
+}
+
+.filter-tab-active {
+  background-color: #191d2b;
+}

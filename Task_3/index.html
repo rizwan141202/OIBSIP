@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>TODO LIST</title>
+</head>
+<body>
+    <div class="main">
+        <div class="addtask">
+            <input type="text" placeholder="Add List" id="inp">
+            <button id="addbtn" class="button">Add</button>
+        </div>
+        <section class="filters">
+        <ul class="filter-content">
+            <button class="filter-button filter-tab-active" data-target="#Pending">Pending</button>
+            <button class="filter-button" data-target="#Completed">Completed</button>
+        </ul>
+    <div class="filters__active"  data-content id="Pending">
+        <ol class="pending"></ol>
+    </div>
+    <div class="" data-content id="Completed">
+        <ol class="completed"></ol>
+    </div>
+</section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
